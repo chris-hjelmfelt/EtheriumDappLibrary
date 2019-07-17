@@ -1,0 +1,147 @@
+body {
+	font-family: "Courier New", Courier, monospace; 
+	background-image: url("images/softBG.jpg");  
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+p {
+	font-family: "Courier New", Courier, monospace; 
+	font-weight: bold;
+}
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+ul.listofbooks {
+    padding-left: 8px;
+}​
+
+.book-group {
+	border: none;
+}
+.book-image {
+	border-radius: 6px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin: auto;
+	width: 90%;
+}
+.message-box {
+	width: 80%;  
+	min-height: 20px; 
+	border: 1px solid black; 
+	margin: auto;
+}
+.headerRow {
+	border: none;
+}
+#alert {
+	font-family: "Courier New", Courier, monospace; 
+	font-weight: bold;
+}
+
+/* Equal height columns */
+.row.display-flex {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.row.display-flex > [class*='col-'] {
+	display: flex;
+	flex-direction: column;  
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* 10px gutter */
+.gutter-10.row {
+	margin-right: -5px;
+	margin-left: -5px;
+}
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+/* My Books Button */
+.mylistbutton {
+	background-color: white;
+	border: 2px solid #03bdfe;
+	color: black;
+	padding: 3px 10px 3px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px;
+	-webkit-transition-duration: 0.1s; /* Safari */
+	transition-duration: 0.1s;
+	cursor: pointer;  
+}
+.mylistbutton:hover {  
+    background-color: #d2f2fd;
+    border-color: #02bffe;
+    color: black;
+}
+
+/* My Books Menu */
+#booklistpop  {
+	width:30%;
+	height:45%;	
+	top:10%;
+	right:10%;	
+	opacity:1;
+	padding:1%;
+	position:fixed;
+	background-color:#ffffff;
+	border-radius: 5px;
+	white-space: wrap;
+    border: 2px solid black; 
+	overflow:auto;
+	display: none;
+}
+#booklisttitle {
+	font-family: "Courier New", Courier, monospace; 
+	font-size: 1.2em;
+    font-weight: bold;
+	color: #0694d6;
+}
+
+/* Alert Message Popup */
+#messagepop  {
+	width:40%;
+	height:20%;	
+	top:30%;
+	right:30%;	
+	opacity:1;
+	padding:1%;
+	position:fixed;
+	background-color:#ffffff;
+	border-radius: 5px;
+	white-space: wrap;
+    border: 4px solid red; 
+	overflow:auto;
+	display: none;
+}
+
+/* Custom styling for checkout and return buttons */
+.checkout{
+	background-color: #ffffff;
+	border-color: #03bdfe;
+}
+.checkout:hover {
+    background-color: #d2f2fd;
+    border-color: #02bffe;
+    color: black;
+}
+.return {
+	background-color: #ffffff;
+	border-color: #fcb866;
+	display: none;	
+}
+.return:hover {
+    background-color: #f9e3c8;
+    border-color: #fe8d03;
+    color: black;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Library </title>  
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="library-style2.css">
+</head>
+<body> 	
+	<div id="headerRow" class="row">
+	  <div class="col-sm-3 col-lg-3">
+	  </div>
+	  <div class="col-sm-6 col-lg-6">
+		<h1 class="text-center">My Library</h1>
+		<h4 class="text-center">Runs on the Ethereum Rinkeby Test Network</h4>		
+		<div id="message" class="message-box">
+		</div>	
+	  </div>
+	  <div class="col-sm-3 col-lg-3">
+	    &nbsp; <br>
+		<button class="mylistbutton" type="button" onclick="viewList()">My Books</button><br>
+	  </div>
+	</div>
+	
+	<hr/>
+	<br/>
+	<div id="bookRow" class="row display-flex">
+	</div>
+	
+	<!-- Template for displaying each book -->
+	<div id="bookTemplate" style="display: none;">		
+	  <div class="col-sm-3 col-lg-2">
+		<div class="panel panel-default panel-pet">          
+		<div class="panel-body">
+			<img img alt="book cover" data-src="holder.js/140x140" class="book-image" src="images\alice.jpg" data-holder-rendered="true"><br>
+			<h3 class="name">The Book</h3>
+			<strong>Author</strong>: <span class="author">Anonomous</span><br>
+			<strong>Genre</strong>: <span class="genre">Drama</span><br>
+			<strong>Published</strong>: <span class="published">1900</span><br><br>
+			<button class="checkout" type="button" data-id="0">Check Out</button>
+			<button class="return" type="button" data-id="0">Return</button><br>
+			<br>
+		</div>
+		<br/>
+		</div>
+	  </div>
+	</div>
+	
+	
+	<!-- Book list -->
+	<div id='booklistpop'>
+		<img id='close' src='images/close.jpg' onclick='closePop()' width='4%' align="right">		
+		<span id='booklisttitle'>Books you have checked out </span> <br>
+		<hr>
+		<ul class="listofbooks">
+		<div class="mybooks" id="mybook1"></div>
+		<div class="mybooks" id="mybook2"></div>
+		<div class="mybooks" id="mybook3"></div>		
+		</ul>
+		<div class="mybooks" id="bookcount"></div>
+	</div>
+	
+	
+	<!-- Message Box -->
+	<div id='messagepop'>
+		<div id="alert"></div>
+	</div>
+		
+	<!-- Javascript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="additional2.js"></script>  <!-- holds our own javascript functions -->	
+    <script src="web3.min.js"></script>  <!-- allows us to interact with Ethereum contracts 
+</body>
+</html>
